@@ -31,6 +31,7 @@
     <Project Path="Playground/Playground.Blazor/Playground.Blazor.csproj" />
   </Folder>
   <Folder Name="/Playground/Migrations/">
+    <Project Path="Playground/Migrations.MSSQL/Migrations.MSSQL.csproj" />
     <Project Path="Playground/Migrations.PostgreSQL/Migrations.PostgreSQL.csproj" Id="2c21903e-5dfa-47e0-82d9-1a0bd627fcbd" />
   </Folder>
   <Folder Name="/Tests/">
