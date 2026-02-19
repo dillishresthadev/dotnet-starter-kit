@@ -14,8 +14,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Playground.Api\Playground.Api.csproj" />
     <ProjectReference Include="..\Playground.Blazor\Playground.Blazor.csproj" />
+    <ProjectReference Include="..\Migrations.MSSQL\Migrations.MSSQL.csproj">
+      <IsAspireProjectResource>false</IsAspireProjectResource>
+    </ProjectReference>
   </ItemGroup>
 
 </Project>

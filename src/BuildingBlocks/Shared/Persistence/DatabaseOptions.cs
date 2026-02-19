@@ -11,7 +11,7 @@ public class DatabaseOptions : IValidatableObject
     /// The database provider to use. Valid values are <see cref="DbProviders.PostgreSQL"/> or <see cref="DbProviders.MSSQL"/>.
     /// Defaults to PostgreSQL.
     /// </summary>
-    public string Provider { get; set; } = DbProviders.PostgreSQL;
+    public string Provider { get; set; } = DbProviders.MSSQL;
 
     /// <summary>
     /// The connection string used by EF Core DbContexts and related services.
