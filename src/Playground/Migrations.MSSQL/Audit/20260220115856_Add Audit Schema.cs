@@ -33,7 +33,7 @@ namespace FSH.Playground.Migrations.MSSQL.Audit
                     RequestId = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Source = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Tags = table.Column<long>(type: "bigint", nullable: false),
-                    PayloadJson = table.Column<string>(type: "jsonb", nullable: false)
+                    PayloadJson = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

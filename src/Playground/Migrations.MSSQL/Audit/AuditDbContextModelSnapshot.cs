@@ -39,7 +39,7 @@ namespace FSH.Playground.Migrations.MSSQL.Audit
 
                     b.Property<string>("PayloadJson")
                         .IsRequired()
-                        .HasColumnType("jsonb");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("ReceivedAtUtc")
                         .HasColumnType("datetime2");

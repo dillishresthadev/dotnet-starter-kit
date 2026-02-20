@@ -36,15 +36,15 @@ public static class Extensions
 
             switch (dbOptions.Provider.ToUpperInvariant())
             {
-                case DbProviders.PostgreSQL:
-                    // Clean up stale locks before configuring Hangfire
-                    CleanupStaleLocks(dbOptions.ConnectionString, provider);
+                //case DbProviders.PostgreSQL:
+                //    // Clean up stale locks before configuring Hangfire
+                //    CleanupStaleLocks(dbOptions.ConnectionString, provider);
 
-                    config.UsePostgreSqlStorage(o =>
-                    {
-                        o.UseNpgsqlConnection(dbOptions.ConnectionString);
-                    });
-                    break;
+                //    config.UsePostgreSqlStorage(o =>
+                //    {
+                //        o.UseNpgsqlConnection(dbOptions.ConnectionString);
+                //    });
+                //    break;
 
                 case DbProviders.MSSQL:
                     config.UseSqlServerStorage(dbOptions.ConnectionString);

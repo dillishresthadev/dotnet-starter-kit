@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FSH.Playground.Migrations.MSSQL.Identity
 {
     [DbContext(typeof(IdentityDbContext))]
-    [Migration("20260219191155_Add Identity Schema")]
+    [Migration("20260220121235_Add Identity Schema")]
     partial class AddIdentitySchema
     {
         /// <inheritdoc />
@@ -370,8 +370,8 @@ namespace FSH.Playground.Migrations.MSSQL.Identity
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 

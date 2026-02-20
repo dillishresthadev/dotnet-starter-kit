@@ -25,11 +25,11 @@ public sealed class TenantDbContextFactory : IDesignTimeDbContextFactory<TenantD
 
         switch (provider.ToUpperInvariant())
         {
-            case "POSTGRESQL":
-                optionsBuilder.UseNpgsql(
-                    connectionString,
-                    b => b.MigrationsAssembly(migrationsAssembly));
-                break;
+            //case "POSTGRESQL":
+            //    optionsBuilder.UseNpgsql(
+            //        connectionString,
+            //        b => b.MigrationsAssembly(migrationsAssembly));
+            //    break;
             case "MSSQL":
                 optionsBuilder.UseSqlServer(
                     connectionString,

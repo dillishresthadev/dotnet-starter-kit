@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FSH.Playground.Migrations.MSSQL.MultiTenancy
 {
     /// <inheritdoc />
-    public partial class AddMultitenancySchema : Migration
+    public partial class AddTenantSchema : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

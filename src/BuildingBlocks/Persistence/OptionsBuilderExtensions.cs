@@ -35,12 +35,12 @@ public static class OptionsBuilderExtensions
 
         switch (dbProvider.ToUpperInvariant())
         {
-            case DbProviders.PostgreSQL:
-                builder.UseNpgsql(connectionString, e =>
-                {
-                    e.MigrationsAssembly(migrationsAssembly);
-                });
-                break;
+            //case DbProviders.PostgreSQL:
+            //    builder.UseNpgsql(connectionString, e =>
+            //    {
+            //        e.MigrationsAssembly(migrationsAssembly);
+            //    });
+            //    break;
 
             case DbProviders.MSSQL:
                 builder.UseSqlServer(connectionString, e =>
